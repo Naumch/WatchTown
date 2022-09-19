@@ -1,0 +1,36 @@
+.personal-account {
+  color: @accent;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  &__link {
+    .flex__align-center;
+  }
+  &__img {
+    margin-right: 0.6rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .personal-account {
+    margin-left: 0;
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .personal-account {
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+    width: 100%;
+    padding: 1rem 2.7rem;
+    &__text {
+      font-size: 1.6rem;
+    }
+    &__img {
+      margin-right: .9rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.phone {
+  &_indentLeft {
+    margin-left: 1.9rem;
+  }
+  &__link {
+    .flex__align-center;
+  }
+  &__img {
+    margin-right: 1.1rem;
+  }
+  &__tel {
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: .3px;
+    &_text_large {
+      font-size: 2rem;
+      letter-spacing: 0px;
+    }
+    &_letterSpacing {
+      letter-spacing: -0.4px;
+    }
+  }
+  &_indentBottom_15 {
+    margin-bottom: 1.5rem;
+    padding-top: 0.2rem;
+    padding-left: 0.3rem;
+  }
+  &_indentBottom_20 {
+    margin-bottom: 2rem;
+    padding-left: 0.3rem;
+  }
+  &_center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 910px) {
+  .phone {
+    &_indentLeft {
+      margin-left: 0;
+    }
+    &__tel_small {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+
+

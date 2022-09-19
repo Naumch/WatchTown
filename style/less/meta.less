@@ -1,0 +1,27 @@
+.meta {
+  background-color: rgba(244, 244, 244, 1);
+  padding: 2.3rem 0;
+  &__inner {
+    .flex__align-center;
+    justify-content: space-between;
+    padding: 0 0.5rem 0 0.2rem;
+  }
+}
+
+@media (max-width: 910px) {
+  .meta {
+    padding: 1.7rem 0;
+    &__inner {
+      justify-content: space-around;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .meta {
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.burger {
+  &__btn {
+    width: 2rem;
+    height: 1.8rem;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+    &-line {
+      width: 2rem;
+      height: .2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: @accent;
+      transition: all 0.5s;
+      &_1.active {
+        display: none;
+      }
+      &_2 {
+        top: calc(50% - 5px);
+        &.active {
+          top: 50%;
+          transform: translate(-50%, 0%) rotate(45deg);  
+        }
+      }
+      &_3 {
+        top: calc(50% + 5px);
+        &.active {
+          top: 50%;
+          transform: translate(-50%, 0%) rotate(-45deg); 
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.cards {
+  border: 1px solid #c6c6c6;
+  width: 6.2rem;
+  height: 3.3rem;
+  .flex__align-center;
+  justify-content: center;
+  margin-left: 0.9rem;
+  &_width {
+    &_59 {
+      width: 5.9rem;
+    }
+  }
+  &__pay {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    &_text_light {
+      color: #767B80;
+    }
+  }
+}
+
+@media (max-width: 801px) {
+  .cards {
+    margin-left: 1.1rem;
+    width: 4.4rem;
+    height: 2.5rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &__img {
+      max-width: 3rem;
+    }
+  }
+}

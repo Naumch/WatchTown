@@ -1,0 +1,88 @@
+.net-pay {
+  padding: 4.2rem 0;
+  &__inner {
+    .flex__align-center;
+    justify-content: space-between;
+  }
+  &__box {
+    .flex__align-center;
+    &-socials {
+      margin-left: 0.5rem;
+    }
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 2rem;
+    &_indentRight {
+      margin-right: 2.5rem;
+    }
+  }
+  &__content {
+    display: flex;
+  }
+}
+
+@media (max-width: 1020px) {
+  .net-pay {
+    &__text {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+      &_indentRight {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .net-pay {
+    padding: 2.4rem 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &__box {
+      &-socials {
+        margin-left: 0;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 601px) {
+  .net-pay {
+    padding: 0;
+    border-bottom: 1px solid #b8b8b8;
+    &__inner {
+      flex-direction: column-reverse;
+    }
+    &__box {
+      flex-direction: column;
+      width: 100%;
+      padding: 2.3rem 0 3rem;
+      &-cards {
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #b8b8b8;
+      }
+      &-socials {
+        padding-bottom: 2.7rem;
+        margin-bottom: 0;
+        & .net-pay__content {
+          margin-left: 1rem;
+        }
+      }
+    }
+    &__text {
+      margin-bottom: 1.6rem;
+      margin-right: 0;
+      &_indentRight {
+        margin-bottom: 1.6rem;
+      }
+    }
+    &__content {
+      justify-content: center;
+    }
+  }
+}

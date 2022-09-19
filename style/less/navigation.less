@@ -1,0 +1,166 @@
+.navigation {
+  margin-top: 5.9rem;
+  padding-bottom: 3.1rem;
+  border-bottom: 1px solid #c6c6c6;
+  display: flex;
+  justify-content: space-around;
+  &__box {
+    &_1 {
+      position: relative;
+      left: 6.2rem;
+    }
+    &_2 {
+      position: relative;
+      left: 17.8rem;  
+    }
+    &_3 {
+      position: relative;
+      left: 5.1rem;
+    }
+    &_4 {
+      position: relative;
+      left: -7rem;
+    }
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    &-btn {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 26rem;
+  }
+  &__item {
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-right: 8.9rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navigation {
+    &__item {
+      padding-right: 1rem;
+    }
+    &__box {
+      &_1 {
+        left: 0;
+      }
+      &_2 {
+        left: 10rem;  
+      }
+      &_3 {
+        left: 0;
+      }
+      &_4 {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .navigation {
+    margin-top: 3.6rem;
+    &__box_2 {
+      left: 10rem;
+    }
+    &__box_4 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 784px) {
+  .navigation {
+    &__list {
+      flex-wrap: nowrap;
+      max-height: 34rem;
+    }
+    &__box_2 {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .navigation {
+    margin-top: 0;
+    padding: 3.5rem 3.5rem 1.4rem 2.4rem;
+    flex-direction: column;
+    &__box {
+      &_1 {
+        position: static;
+      }
+      &_2 {
+        position: static;
+      }
+      &_3 {
+        position: static;
+      }
+      &_4 {
+        display: block;
+        position: static;
+      }
+    }
+    &__list {
+      flex-wrap: nowrap;
+      max-height: 40rem;
+    }
+    &__title {
+      font-size: 1.7rem;
+      letter-spacing: -.5px;
+      .flex__align-center;
+      justify-content: space-between;
+      &-btn {
+        display: block;
+        width: 1.4rem;
+        height: 1.4rem;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 0.3rem;
+      }
+      &-line {
+        width: 1.4rem;
+        height: .2rem;
+        position: absolute;
+        top: 50%;
+        background-color: #B8B8B8;
+        transition: all 0.5s;
+        border-radius: 2px;
+        &_2 {
+          transform: rotate(270deg);
+          &.active {
+            transform: rotate(0);  
+          }
+        }
+      }
+    }
+    &__menu {
+      display: none;
+      &.active {
+        display: block;
+        padding-left: 0.2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__item {
+      letter-spacing: -.6px;
+      font-size: 1.4rem;
+      padding-right: 0;
+      margin-bottom: 0.8rem;
+      &_none {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  &_overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1142px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 801px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.logo {
+  padding-bottom: 0.2rem;
+  padding-left: 0.1rem;
+}
+
+@media (max-width: 910px) {
+  .logo__img {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 371px) {
+  .wrapper, .container {
+    max-width: 370px;
+  }
+  .logo {
+    margin-left: 1.3rem;
+    padding-top: 0.2rem;
+    &__img {
+      width: 12.2rem;
+    }
+  }
+}
+
+
+
+
+
+

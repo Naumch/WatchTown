@@ -1,0 +1,61 @@
+.messengers {
+  &__box {
+    margin-bottom: 1rem;
+    &_order-1 {
+      order: -1;
+    }
+  }
+  &__link {
+    .flex__align-center;
+    &_indentBottom {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__img {
+    margin-right: 1rem;
+    &_whatsapp {
+      margin-right: 0.2rem;
+    }
+    &_telegram {
+      margin-right: 0.5rem;
+    }
+    &_viber {
+      margin-right: 0.8rem;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  &_row {
+    margin-top: 2.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    & .messengers__box {
+      margin-bottom: 0;
+    }
+    & .messengers__text {
+      padding-top: 0.4rem;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .messengers {
+    &__box {
+      margin-right: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 371px) {
+  .messengers {
+    &_row {
+      justify-content: space-between;
+    }
+    &__box {
+      margin-right: 0;
+    }
+  }
+    
+}

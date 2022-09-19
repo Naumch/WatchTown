@@ -1,0 +1,24 @@
+.banner {
+  background-color: rgba(35, 35, 35, 1);
+  padding: 1.3rem 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  &_weight_bold {
+    font-weight: 700;
+  }
+  &_transform_uppercase {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 427px) {
+  .banner {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 0.8rem 7rem;
+    &_none {
+      display: none;
+    }
+  }
+}
